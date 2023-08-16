@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0F3E9"
+    tools:context=".silver">
+
+  <EditText
+      android:id="@+id/et_r"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="Result"
+      android:inputType="numberDecimal"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/calculate"
+      app:layout_constraintStart_toStartOf="@+id/calculate"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.54" />
+
+  <EditText
+      android:id="@+id/et_p"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="price of 1 gram Silver"
+      android:inputType="numberDecimal"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/et_w"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/et_w"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.227" />
+
+  <EditText
+      android:id="@+id/et_mc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="for the item"
+      android:inputType="numberDecimal"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/et_w"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/et_w"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.338" />
+
+  <TextView
+      android:id="@+id/t_gw"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Silver weight:"
+      android:textColor="#3F51B5"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/et_w"
+      app:layout_constraintHorizontal_bias="0.35"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.144" />
+
+  <TextView
+      android:id="@+id/t_gp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Silver price:"
+      android:textColor="#3F51B5"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/t_gw"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="@+id/t_gw"
+      app:layout_constraintTop_toBottomOf="@+id/t_gw"
+      app:layout_constraintVertical_bias="0.064" />
+
+  <TextView
+      android:id="@+id/wastage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Making charge:"
+      android:textColor="#3F51B5"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/t_gw"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="@+id/t_gw"
+      app:layout_constraintTop_toBottomOf="@+id/t_gw"
+      app:layout_constraintVertical_bias="0.193" />
+
+  <Button
+      android:id="@+id/calculate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="silver_price"
+      android:text="calculate"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.464"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.439" />
+
+  <EditText
+      android:id="@+id/et_w"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="weight in grams"
+      android:inputType="numberDecimal"
+      android:textSize="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.925"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.135" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
